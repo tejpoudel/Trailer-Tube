@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-
-alert("JS Compoenent is working fine");
-=======
 alert("Welcome TO Trailer Tube");
->>>>>>> 825b281093d2874903f2a42c11d479ce7dcd1d96
 // Project - Trailer Tube
 //TODO Movie OMDb API
-// TODO Youtube API Working 
+//TODO Youtube API Working 
 
 
 //Api Information -
@@ -18,6 +13,7 @@ function movieinfo() {
         var queryURL = "http://www.omdbapi.com/?t=rock&apikey=388edf5a";
         // Creating an AJAX call for the specific movie 
         $.ajax({
+            
           url: queryURL,
           method: "GET"
         }).then(function(response) {
