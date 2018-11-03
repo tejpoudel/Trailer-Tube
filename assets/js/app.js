@@ -15,9 +15,6 @@ var searchMovie = "The Rock"//$("#movieSearch").val().trim();
 
 //When id="searchButton" is clicked, It will take value from id=moviesearch and append to queryURL 
 
-
-
-
 function movieinfo() {
         
         var queryURL = "http://www.omdbapi.com/?t="+searchMovie+ "&apikey=388edf5a";
