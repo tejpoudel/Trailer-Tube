@@ -1,73 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow%7CVolkhov:400italic,700);
 
+html {
+   height: 100%;
+   width: 100%;
+   min-height: 100%;
+   background: #C2C9C8;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
 
-h2{
-    color: red;
-    text-align: center;
+body {
+    background: linear-gradient(to right, rgb(10, 10, 9), rgb(10, 10, 5));
+   color: #444;
+   font-family: “PT Sans Narrow”, Arial, Sans-serif;
+   font-weight: 300;
+   font-size: 15px;
+   -webkit-font-smoothing: antialiased;
+   min-width: 300px;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+.navbar {
+   background: black;
+   border-top: 0;
+   color: #C2C9C8;
 }
 
 h1 {
-    padding-top: 20%;
-    font-size: 56px;
-    color: black;
-    font-family: “Volkhov”, serif;
+    padding-top: 50%;
+    font-size: 200px;
+    color: white;
     text-align: center;
-    font-weight: 700;
+    font-weight: 700; 
     text-shadow: 1px 1px 3px #e0d1bc;
     font-family: ‘Limelight’, cursive;
 }
 
-.btn-primary {
-    color: #fff;
-    background-color: #286595;
-    border-color: white;
-    margin-top: 20px;
-}
-
-div {
-    text-align: center;
-    margin: 10px;
-}
-=======
-.container {
-    background: linear-gradient(to right, rgb(14, 8, 4), rgb(20, 19, 5));
-    min-height:100%;
-    position:relative;
-    margin-top: -30px;
- }
+/* .container {
+   min-height:100%;
+   position:relative;
+   margin-top: -30px;
+} */
 
 .search {
-    width: 30%;
-    height: 40px;
-    font-size: 15px;
-    color: rgb(194, 42, 214);
-    padding-left: 50px;
-    margin-bottom: 20px;
-  }
+   width: 30%;
+   height: 40px;
+   font-size: 15px;
+   color: rgb(194, 42, 214);
+   padding-left: 50px;
+   margin-bottom: 20px;
+ }
 
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+   outline: none;
 }
 
 .btn-primary {
-    background: #4aaaa5;    box-shadow: none;
-    border: none;
-    margin-bottom: 50px;
+   background: #4aaaa5;    box-shadow: none;
+   border: none;
+   margin-bottom: 50px;
 }
 
 /* Footer */
 .footer {
-    width: 100%;
-    height: 68px;
-    background: #666666;
-    border-top: 8px solid #4aaaa5;
-    color: #C2C9C8;
+   height: 68px;
+   background: #666666;
+   border-top: 8px solid #4aaaa5;
+   color: #C2C9C8;
 }
 
 .footer p {
-    font-size: 8px;
-    margin: 0;
+   font-size: 8px;
+   margin: 0;
 }
 
