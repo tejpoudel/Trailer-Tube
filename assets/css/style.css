@@ -42,7 +42,7 @@ h1 {
 }
 
 .container {
-    background: linear-gradient(to right, #B75311, #D0BD1A);
+    background: linear-gradient(to right, rgb(14, 8, 4), rgb(20, 19, 5));
     min-height:100%;
     position:relative;
     margin-top: -30px;
