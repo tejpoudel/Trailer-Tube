@@ -1,13 +1,12 @@
 alert("Welcome TO Trailer Tube");
 // Project - Trailer Tube
 //TODO Movie OMDb API
-// TODO Youtube API Working 
+//TODO Youtube API Working 
 
 
 //Api Information -
 //Youtube KEY = AIzaSyCb3e79c57_B7L6m214mksu6V3b_k_xEtA
 //OMDb Key - 388edf5a
-
 
 //Get the input from id="movieSearch" input type and feed into t and store the input value to searchMovie Variable 
 
@@ -18,9 +17,10 @@ var searchMovie = "The Rock"//$("#movieSearch").val().trim();
 
 function movieinfo() {
         
-        var queryURL = "http://www.omdbapi.com/?t=rock&apikey=388edf5a";
+        var queryURL = "http://www.omdbapi.com/?t="+searchMovie+ "&apikey=388edf5a";
         // Creating an AJAX call for the specific movie 
         $.ajax({
+
           url: queryURL,
           method: "GET"
         }).then(function(response) {
