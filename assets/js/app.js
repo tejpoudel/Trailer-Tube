@@ -1,3 +1,4 @@
+
 alert("JS Compoenent is working fine");
 // Project - Trailer Tube
 //TODO Movie OMDb API
