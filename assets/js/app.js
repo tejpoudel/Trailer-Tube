@@ -1,4 +1,4 @@
-alert("JS Compoenent !!! ");
+alert("Welcome TO Trailer Tube");
 // Project - Trailer Tube
 //TODO Movie OMDb API
 // TODO Youtube API Working 
