@@ -23,8 +23,9 @@ h1 {
 
 .btn-primary {
     color: #fff;
-    background-color: red;
-    border-color: red;
+    background-color: #286595;
+    border-color: white;
+    margin-top: 20px;
 }
 
 div {
