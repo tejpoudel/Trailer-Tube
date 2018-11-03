@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Volkhov:400italic,700);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow%7CVolkhov:400italic,700);
 
 html {
     height: 100%;
@@ -31,14 +31,13 @@ body {
 }
 
 h1 {
-	padding-top: 20%;
-	font-size: 56px;
-	color: black;
-	font-family: "Volkhov", serif;
-	text-align: center;
-	font-weight: 700;
+    padding-top: 50%;
+    font-size: 200px;
+    color: white;
+    text-align: center;
+    font-weight: 700; 
     text-shadow: 1px 1px 3px #e0d1bc;
-    font-family: 'Limelight', cursive;
+    font-family: ‘Limelight’, cursive;
 }
 
 .container {
@@ -48,19 +47,19 @@ h1 {
  }
 
 .search {
-    width: 30%;
-    height: 40px;
-    font-size: 15px;
-    color: rgb(194, 42, 214);
-    padding-left: 50px;
-    margin-bottom: 20px;
-  }
+   width: 30%;
+   height: 40px;
+   font-size: 15px;
+   color: rgb(194, 42, 214);
+   padding-left: 50px;
+   margin-bottom: 20px;
+ }
 
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+   outline: none;
 }
 
 .btn-primary {
@@ -80,7 +79,7 @@ button:focus {
 }
 
 .footer p {
-    font-size: 8px;
-    margin: 0;
+   font-size: 8px;
+   margin: 0;
 }
 
