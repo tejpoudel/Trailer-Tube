@@ -8,6 +8,14 @@ alert("Welcome TO Trailer Tube");
 //Youtube KEY = AIzaSyCb3e79c57_B7L6m214mksu6V3b_k_xEtA
 //OMDb Key - 388edf5a
 
+
+//Get the input from id="movieSearch" input type and feed into t and store the input value to searchMovie Variable 
+
+var searchMovie = "The Rock"//$("#movieSearch").val().trim();
+
+
+//When id="searchButton" is clicked, It will take value from id=moviesearch and append to queryURL 
+
 function movieinfo() {
         
         var queryURL = "http://www.omdbapi.com/?t=rock&apikey=388edf5a";
