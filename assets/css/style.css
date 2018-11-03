@@ -1,46 +1,33 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Volkhov:400italic,700);
 
-html {
-    height: 100%;
-    width: 100%;
-    min-height: 100%;
-    background: #C2C9C8;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
-body {
-    
-    color: #444;
-    font-family: "PT Sans Narrow", Arial, Sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    -webkit-font-smoothing: antialiased;
-    min-width: 300px;
-    height: 100%;
-    margin: 0;
-    padding: 0; 
-}
-
-.navbar {
-    background: #666666;
-    border-top: 8px solid #4aaaa5;
-    color: #C2C9C8;
+h2{
+    color: red;
+    text-align: center;
 }
 
 h1 {
-	padding-top: 20%;
-	font-size: 56px;
-	color: black;
-	font-family: "Volkhov", serif;
-	text-align: center;
-	font-weight: 700;
+    padding-top: 20%;
+    font-size: 56px;
+    color: black;
+    font-family: “Volkhov”, serif;
+    text-align: center;
+    font-weight: 700;
     text-shadow: 1px 1px 3px #e0d1bc;
-    font-family: 'Limelight', cursive;
+    font-family: ‘Limelight’, cursive;
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: #286595;
+    border-color: white;
+    margin-top: 20px;
+}
+
+div {
+    text-align: center;
+    margin: 10px;
+}
+=======
 .container {
     background: linear-gradient(to right, rgb(14, 8, 4), rgb(20, 19, 5));
     min-height:100%;
