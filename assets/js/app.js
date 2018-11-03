@@ -1,4 +1,4 @@
-alert("JS Compoenent is working again !!! ");
+alert("JS Compoenent is working !!! ");
 // Project - Trailer Tube
 //TODO Movie OMDb API
 // TODO Youtube API Working 
