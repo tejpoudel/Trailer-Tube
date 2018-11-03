@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    
+    background: linear-gradient(to right, rgb(14, 8, 4), rgb(20, 19, 5));    
     color: black;
     font-family: "PT Sans Narrow", Arial, Sans-serif;
     font-weight: 300;
@@ -25,9 +25,9 @@ body {
 }
 
 .navbar {
-    background: #666666;
-    border-top: 8px solid #4aaaa5;
-    color: #C2C9C8;
+    background: #141414;
+    border-top: 0 solid #141414;
+    color: black;
 }
 
 h1 {
@@ -42,7 +42,6 @@ h1 {
 }
 
 .container {
-    background: linear-gradient(to right, rgb(14, 8, 4), rgb(20, 19, 5));
     min-height:100%;
     position:relative;
     margin-top: -30px;
@@ -65,7 +64,8 @@ button:focus {
 }
 
 .btn-primary {
-    background: #4aaaa5;    box-shadow: none;
+    background: #286595; 
+    box-shadow: none;
     border: none;
     margin-bottom: 50px;
 }
@@ -75,7 +75,7 @@ button:focus {
     width: 100%;
     height: 68px;
     background: #666666;
-    border-top: 8px solid #4aaaa5;
+    border-top: 0px solid black;
     color: #C2C9C8;
 }
 
