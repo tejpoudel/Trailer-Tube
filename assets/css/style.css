@@ -4,8 +4,8 @@ body {
 }
 h1,h2{
     color: red;
+    text-align: center;
 }
-
 .btn-primary {
     color: #fff;
     background-color: #007bff;
