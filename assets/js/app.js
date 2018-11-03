@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 
 alert("JS Compoenent is working fine");
+=======
+alert("Welcome TO Trailer Tube");
+>>>>>>> 825b281093d2874903f2a42c11d479ce7dcd1d96
 // Project - Trailer Tube
 //TODO Movie OMDb API
 // TODO Youtube API Working 
