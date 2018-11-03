@@ -1,14 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow%7CVolkhov:400italic,700);
+
 body {
     background-color: #141414;
     color: white;
 }
-h1,h2{
+
+h2{
     color: red;
     text-align: center;
 }
+
+h1 {
+    padding-top: 20%;
+    font-size: 56px;
+    color: black;
+    font-family: “Volkhov”, serif;
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px #e0d1bc;
+    font-family: ‘Limelight’, cursive;
+}
+
 .btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-    margin-top: 10px;
+    background-color: red;
+    border-color: red;
+}
+
+div {
+    text-align: center;
+    margin: 10px;
 }
