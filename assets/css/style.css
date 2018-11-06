@@ -1,33 +1,33 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow%7CVolkhov:400italic,700);
 
 html {
-   height: 100%;
-   width: 100%;
-   min-height: 100%;
-   background: #C2C9C8;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    background: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 body {
-    background: linear-gradient(to right, rgb(10, 10, 9), rgb(10, 10, 5));
-   color: #444;
-   font-family: “PT Sans Narrow”, Arial, Sans-serif;
-   font-weight: 300;
-   font-size: 15px;
-   -webkit-font-smoothing: antialiased;
-   min-width: 300px;
-   height: 100%;
-   margin: 0;
-   padding: 0;
+    background: linear-gradient(to right, rgb(14, 8, 4), rgb(20, 19, 5));    
+    color: black;
+    font-family: "PT Sans Narrow", Arial, Sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    min-width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 0; 
 }
 
 .navbar {
-   background: black;
-   border-top: 0;
-   color: #C2C9C8;
+    background: #141414;
+    border-top: 0 solid #141414;
+    color: black;
 }
 
 h1 {
@@ -40,11 +40,11 @@ h1 {
     font-family: ‘Limelight’, cursive;
 }
 
-/* .container {
-   min-height:100%;
-   position:relative;
-   margin-top: -30px;
-} */
+.container {
+    min-height:100%;
+    position:relative;
+    margin-top: -30px;
+ }
 
 .search {
    width: 30%;
@@ -63,17 +63,19 @@ button:focus {
 }
 
 .btn-primary {
-   background: #4aaaa5;    box-shadow: none;
-   border: none;
-   margin-bottom: 50px;
+    background: #286595; 
+    box-shadow: none;
+    border: none;
+    margin-bottom: 50px;
 }
 
 /* Footer */
 .footer {
-   height: 68px;
-   background: #666666;
-   border-top: 8px solid #4aaaa5;
-   color: #C2C9C8;
+    width: 100%;
+    height: 68px;
+    background: #666666;
+    border-top: 0px solid black;
+    color: #C2C9C8;
 }
 
 .footer p {
