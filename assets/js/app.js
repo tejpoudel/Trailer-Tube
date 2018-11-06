@@ -19,14 +19,10 @@ alert("Welcome TO Trailer Tube");
 //var movieSearch = "";
 function movieinfo() {
        
-<<<<<<< HEAD
         var movieSearch = $("#movieSearch").val().trim();
 
         var queryURL = "http://www.omdbapi.com/?t="+movieSearch+"&apikey=388edf5a";
         console.log(queryURL);
-=======
-        var queryURL = "http://www.omdbapi.com/?t="+movieSearchArr+"&apikey=388edf5a";
->>>>>>> 726804b896fc5fda45a5a26830df4692b436787e
         // Creating an AJAX call for the specific movie 
         $.ajax({
 
