@@ -10,14 +10,14 @@ alert("Welcome TO Trailer Tube");
 
 //Get the input from id="movieSearch" input type and feed into t and store the input value to searchMovie Variable 
 
-var searchMovie = "The Rock"//$("#movieSearch").val().trim();
+var movieSearchArr = [ ]//$("#movieSearch").val().trim();
 
 
 //When id="searchButton" is clicked, It will take value from id=moviesearch and append to queryURL 
 
 function movieinfo() {
-        
-        var queryURL = "http://www.omdbapi.com/?t="+searchMovie+ "&apikey=388edf5a";
+       
+        var queryURL = "http://www.omdbapi.com/?t="+movieSearchArr+"&apikey=388edf5a";
         // Creating an AJAX call for the specific movie 
         $.ajax({
 
@@ -44,3 +44,24 @@ function youtube(){
 )};
 
 youtube(); 
+
+// id="searchButton" is click and take input value from id="movieSearch" input type
+// Creating function 
+
+$("#searchButton").on("click", function(event){
+
+    //Below code prevents to refresh when pressed enter 
+    event.preventDefault();
+
+    if(document.getElementById("movieSearch").value == ""){
+        alert("Please Enter your movie name!");
+        return false ;
+    } else{
+        var movieSearch = $("#movieSearch").val().trim();
+
+        // add above movieSearch value into array 
+        movieSearchArr.push(movieSearch);
+
+    }
+});
+
