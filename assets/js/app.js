@@ -22,6 +22,8 @@ alert("Welcome TO Trailer Tube");
 function movieinfo() {
         var movieSearch = $("#movieSearch").val().trim();
 
+        var movRating = 10;
+
         var queryURL = "http://www.omdbapi.com/?t="+movieSearch+"&apikey=388edf5a";
         console.log(queryURL);
         // Creating an AJAX call for the specific movie 
@@ -74,7 +76,7 @@ function movieinfo() {
         movieInfo.append(Plot);
         
         // Rating information
-        var Rating = $("<p>").text("Movie Rating: " + movieRating);
+        var Rating = $("<p>").text("Movie Rating: " + movieRating +"/"+movRating);
         //console.log(Rating);
          movieInfo.append(Rating);
         
@@ -94,16 +96,6 @@ function movieinfo() {
         // Img 
         var imgMovie = $("<img>").attr("src", moviePoster);
         movieInfo.append(imgMovie);
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -132,8 +124,10 @@ function youtube(){
         var videoID = response.items[0].id.videoId;
         console.log("Video Id :" + videoID);
 
-        var movieTrailer = $("<iframe id=ytplayer type=text/html width=720 height=405 src=https://www.youtube.com/embed/"+videoID+"frameborder=0 allowfullscreen>");
+        var movieTrailer = $("<iframe id=ytplayer type=text/html width=720 height=405 src=https://www.youtube.com/embed/"+videoID+" frameborder=0 allowfullscreen>");
         console.log(movieTrailer);
+
+        $("#trailer").append(movieTrailer);
 
         //$(trailer).append(movieTrailer);
     }
