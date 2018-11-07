@@ -1,3 +1,5 @@
+$(Document).ready(function(){
+
 alert("Welcome TO Trailer Tube");
 // Project - Trailer Tube
 //TODO Movie OMDb API
@@ -64,7 +66,11 @@ function movieinfo() {
         var Rating = $("<p>").text("Movie Rating: " + movieRating);
         console.log(Rating);
 
-        movieInfo.append(Rating);
+        // $("#movieInfo").append(Rating);
+
+        // movieInfo.append(Rating);
+
+        
 
         }
         
@@ -121,4 +127,4 @@ $("#searchButton").on("click", function(event){
     youtube(); 
 
 });
-
+})
