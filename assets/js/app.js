@@ -18,14 +18,12 @@ alert("Welcome TO Trailer Tube");
 //When id="searchButton" is clicked, It will take value from id=moviesearch and append to queryURL 
 //var movieSearch = "";
 function movieinfo() {
-       
         var movieSearch = $("#movieSearch").val().trim();
 
         var queryURL = "http://www.omdbapi.com/?t="+movieSearch+"&apikey=388edf5a";
         console.log(queryURL);
         // Creating an AJAX call for the specific movie 
         $.ajax({
-
           url: queryURL,
           method: "GET"
         }).then(function(response) {
