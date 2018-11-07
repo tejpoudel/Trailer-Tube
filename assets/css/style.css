@@ -24,10 +24,13 @@ body {
     padding: 0; 
 }
 
+
 .navbar {
     background: #141414;
     border-top: 0 solid #141414;
     color: black;
+    vertical-align: middle;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -43,7 +46,7 @@ h1 {
 .container {
     min-height:100%;
     position:relative;
-    margin-top: -30px;
+    margin-top: 250px;
  }
 
 .search {
@@ -52,7 +55,7 @@ h1 {
    font-size: 15px;
    color: rgb(194, 42, 214);
    padding-left: 50px;
-   margin-bottom: 20px;
+   margin-bottom: 10px;
  }
 
 input:focus,
@@ -62,11 +65,19 @@ button:focus {
    outline: none;
 }
 
+.div {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    width: 20%;  
+  }
+  
+
 .btn-primary {
     background: #286595; 
     box-shadow: none;
     border: none;
-    margin-bottom: 50px;
 }
 
 /* Footer */
