@@ -4,7 +4,7 @@ html {
     height: 100%;
     width: 100%;
     min-height: 100%;
-    background: black;
+    background: lightgray;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to right, rgb(14, 8, 4), rgb(20, 19, 5));    
+    background: lightgray;    
     color: black;
     font-family: "PT Sans Narrow", Arial, Sans-serif;
     font-weight: 300;
