@@ -66,6 +66,8 @@ function movieinfo() {
 
         movieInfo.append(Rating);
 
+        $("#trailerInfo").prepend(movieInfo);
+
         }
         
            
