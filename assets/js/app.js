@@ -72,6 +72,8 @@ function movieinfo() {
 
         
 
+        $("#trailerInfo").prepend(movieInfo);
+
         }
         
            
