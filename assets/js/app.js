@@ -1,3 +1,5 @@
+$(Document).ready(function(){
+
 alert("Welcome TO Trailer Tube");
 // Project - Trailer Tube
 //TODO Movie OMDb API
@@ -61,10 +63,49 @@ function movieinfo() {
 
         var movieInfo = $("<div class='movieInfo'>");
 
-        var Rating = $("<p>").text("Movie Rating: " + movieRating);
-        console.log(Rating);
+        //Title Information 
 
-        movieInfo.append(Rating);
+        var Title = $("<p>").text("Movie: " +movieTitle);
+        movieInfo.append(Title);
+
+        //Plot information 
+
+        var Plot = $("<p>").text("Overview: " + moviePlot);
+        movieInfo.append(Plot);
+        
+        // Rating information
+        var Rating = $("<p>").text("Movie Rating: " + movieRating);
+        //console.log(Rating);
+         movieInfo.append(Rating);
+        
+        // Actors Information 
+        var Actors = $("<p>").text("Actors: "+movieActors);
+        movieInfo.append(Actors);
+
+        // Director 
+        var director = $("<p>").text("Director: " + movieDirector);
+        movieInfo.append(director);
+
+        // Released 
+
+        var realeased = $("<p>").text("Released: "+ movieReleased);
+        movieInfo.append(realeased);
+
+        // Img 
+        var imgMovie = $("<img>").attr("src", moviePoster);
+        movieInfo.append(imgMovie);
+
+
+
+
+
+
+
+
+
+
+
+
 
         $("#trailerInfo").prepend(movieInfo);
 
@@ -123,4 +164,4 @@ $("#searchButton").on("click", function(event){
     youtube(); 
 
 });
-
+})
