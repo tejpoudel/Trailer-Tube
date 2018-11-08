@@ -12,13 +12,11 @@ html {
 }
 
 body {
-    background: lightgray;    
-    color: black;
+    background:  linear-gradient(to right, #020202, #4b3312);    
+    color: #ebeef1;
     font-family: "PT Sans Narrow", Arial, Sans-serif;
-    font-weight: 300;
-    font-size: 15px;
+    font-size: 20px;
     -webkit-font-smoothing: antialiased;
-    min-width: 300px;
     height: 100%;
     margin: 0;
     padding: 0; 
@@ -34,8 +32,8 @@ body {
 }
 
 #heading {
-    font-size: 50px;
-    color: white;
+    font-size: 70px;
+    color: #af3e3e;
     text-align: center;
     font-weight: 700; 
     text-shadow: 1px 1px 3px #e0d1bc;
@@ -43,10 +41,10 @@ body {
 }
 
 .container {
-    min-height:100%;
     position:relative;
-    margin-top: 250px;
- }
+    width:
+    height: ;
+}
 
 .search {
    width: 30%;
@@ -57,13 +55,10 @@ body {
    margin-bottom: 10px;
  }
 
-div {
-    text-align: center;
-}
+ #searchButton {
+    margin-bottom: 10px;
+ }
 
-#fotimg {
-    
-}
 
 input:focus,
 select:focus,
@@ -72,13 +67,13 @@ button:focus {
    outline: none;
 }
 
-.div {
+/* .showTrailer {
     margin: auto;
     position: relative;
-    text-align: center;
-    top: 50%;
-    width: 20%;  
-  }
+    width: 70%;  
+    height: 50%;
+    background: black;
+  } */
   
 
 .btn-primary {
@@ -87,13 +82,35 @@ button:focus {
     border: none;
 }
 
+#trailerInfo {
+    min-height: 100%;
+    height: auto !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    background: black;
+}
+
+.mvImg {
+    float: right;
+    padding: 10px;
+    height: 400px;
+}
+
+.Information {
+    padding: 20px;
+    font-size: 50px;
+}
+
+
 /* Footer */
 .footer {
     width: 100%;
     height: 68px;
     background: #666666;
-    border-top: 0px solid black;
     color: #C2C9C8;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer p {
