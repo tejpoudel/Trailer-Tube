@@ -105,12 +105,10 @@ function movieinfo() {
 
         var trailerBtn = $("<button>").text("Watch Trailer");
         movieInfo.append(trailerBtn);
-
-        $("#trailerInfo").prepend(movieInfo);
+        
+        //$("movieInfo").empty();
+        $("#trailerInfo").append(movieInfo);
         $("#trailer").append(movieTrailer);
-
-       
-
 
         }
         
