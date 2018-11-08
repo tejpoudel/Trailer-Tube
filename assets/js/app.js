@@ -7,7 +7,7 @@ $(Document).ready(function(){
  
     
     
-    alert("Welcome TO Trailer Tube");
+    //alert("Welcome TO Trailer Tube");
     // Project - Trailer Tube
     //TODO Movie OMDb API
     //TODO Youtube API Working 
