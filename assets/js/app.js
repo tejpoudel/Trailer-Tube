@@ -120,7 +120,7 @@ $(Document).ready(function(){
         var queryURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q="+movieSearch+"Official"+"Trailer"+"&type=video&key=AIzaSyCb3e79c57_B7L6m214mksu6V3b_k_xEtA";
         console.log(queryURL);
         //Creating an Ajax call for the specific trailer 
-    
+        
         $.ajax({
     
             url:queryURL,
@@ -131,7 +131,7 @@ $(Document).ready(function(){
             var videoID = response.items[0].id.videoId;
             console.log("Video Id :" + videoID);
     
-            var movieTrailer = $("<iframe id=ytplayer type=text/html width=720 height=405 src=https://www.youtube.com/embed/"+videoID+" frameborder=0 allowfullscreen>");
+            var movieTrailer = $("<iframe id=ytplayer type=text/html width=100% height=405 src=https://www.youtube.com/embed/"+videoID+" frameborder=0 allowfullscreen>");
             console.log(movieTrailer);
     
             $("#trailer").append(movieTrailer);
