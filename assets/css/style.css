@@ -40,12 +40,13 @@ body {
     position:relative;
  }
 .search {
-   width: 30%;
-   height: 40px;
-   font-size: 15px;
-   color: #C2C9C8;
-   padding-left: 50px;
-   margin-bottom: 10px;
+    width: 40%;
+    height: 40px;
+    font-size: 15px;
+    color: #C2C9C8;
+    /* padding-left: 50px; */
+    margin-bottom: 10px;
+    margin-top: 15px;
  }
  #searchButton {
     margin-bottom: 10px;
