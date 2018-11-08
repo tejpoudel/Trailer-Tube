@@ -108,9 +108,6 @@ function movieinfo() {
 
         var trailerBtn = $("<button>").text("Watch Trailer");
         movieInfo.append(trailerBtn);
-
-        var onClick = trailerBtn.attr("onclick",displayTrailer());
-        movieInfo.append(onClick);
         
         //$("movieInfo").empty();
         $("#trailerInfo").append(movieInfo);
@@ -169,7 +166,7 @@ $("#searchButton").on("click", function(event){
        // add above movieSearch value into array 
        // movieSearchArr.push(movieSearch);
        var movieSearch = $("#movieSearch").val().trim();
-       console.log(movieSearch);
+       //console.log(movieSearch);
        
     movieinfo();
     youtube(); 
@@ -180,14 +177,11 @@ $("#searchButton").on("click", function(event){
     //$("#showTrailer").empty();
     $("#trailerInfo").show();
     $("#trailer").show();
-    
     //empty the div 
     
-//create a function for displaying Trailer Div 
-function displayTrailer(){
-    
-}
+
 
 });
+
 
 })
