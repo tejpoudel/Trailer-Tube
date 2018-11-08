@@ -84,8 +84,8 @@ button:focus {
 }
 .mvImg {
     float: left;
-    height: 400px;
-    padding-right: 20px;
+    height: 300px;
+    padding-right: 15px;
 }
 /* .Information {
     padding: 20px;
@@ -103,4 +103,9 @@ button:focus {
 .footer p {
    font-size: 8px;
    margin: 0;
+}
+
+hr
+{
+    border-top: 1px solid rgb(255, 255, 255);
 }
