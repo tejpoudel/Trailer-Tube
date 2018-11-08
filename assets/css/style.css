@@ -10,7 +10,7 @@ html {
     background-size: cover;
 }
 body {
-    background:  linear-gradient(to right, #020202, #4b3312);    
+    background-color:  #020202;    
     color: #e6e9ec;
     font-family: "PT Sans Narrow", Arial, Sans-serif;
     font-size: 40px;
@@ -69,6 +69,7 @@ button:focus {
     background: black;
     padding: 20px;
     height: 500px;
+    margin: 30px;
 }
 
 .title {
