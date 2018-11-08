@@ -68,6 +68,7 @@ button:focus {
     width: 100%;  
     background: black;
     padding: 20px;
+    height: 500px;
 }
 
 .title {
