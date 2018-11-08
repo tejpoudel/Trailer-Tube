@@ -152,10 +152,6 @@ function youtube(){
 $("#searchButton").on("click", function(event){
 
 
-    //empty the div 
-    //$("#movieInfo").empty();
-
-
     //Below code prevents to refresh when pressed enter 
     event.preventDefault();
 
@@ -171,8 +167,11 @@ $("#searchButton").on("click", function(event){
        
        
     }
+    //$("#showTrailer").empty();
     $("#trailerInfo").show();
     $("#trailer").show();
+    //empty the div 
+    
 
     movieinfo();
     youtube(); 
