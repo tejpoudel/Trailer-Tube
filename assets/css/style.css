@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow%7CVolkhov:400italic,700);
+
 html {
     height: 100%;
     width: 100%;
@@ -9,6 +10,7 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
+
 body {
     background:  linear-gradient(to right, #020202, #4b3312);    
     color: #ebeef1;
@@ -19,6 +21,8 @@ body {
     margin: 0;
     padding: 0; 
 }
+
+
 .navbar {
     background: #141414;
     border-top: 0 solid #141414;
@@ -26,6 +30,7 @@ body {
     vertical-align: middle;
     margin-bottom: 100px;
 }
+
 #heading {
     font-size: 70px;
     color: #af3e3e;
@@ -34,9 +39,11 @@ body {
     text-shadow: 1px 1px 3px #e0d1bc;
     font-family: ‘Limelight’, cursive;
 }
+
 .container {
     position:relative;
  }
+
 .search {
    width: 30%;
    height: 40px;
@@ -45,45 +52,65 @@ body {
    padding-left: 50px;
    margin-bottom: 10px;
  }
+
  #searchButton {
     margin-bottom: 10px;
  }
+
+
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
    outline: none;
 }
-#trailerInfo {
+
+/* .showTrailer {
     margin: auto;
-    /* position: relative; */
+    position: relative;
     width: 70%;  
     height: 50%;
     background: black;
-  }
+  } */
+  
+
 .btn-primary {
     background: #286595; 
     box-shadow: none;
     border: none;
 }
+
+#trailerInfo {
+    min-height: 100%;
+    height: auto !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    background: black;
+}
+
 .mvImg {
     float: left;
     padding: 10px;
     height: 400px;
 }
+
 .Information {
     padding: 20px;
     font-size: 50px;
 }
+
+
 /* Footer */
 .footer {
     width: 100%;
     height: 68px;
     background: #666666;
     color: #C2C9C8;
-    position: fixed;
+    position: absolute;
     bottom: 0;
 }
+
 .footer p {
    font-size: 8px;
    margin: 0;
