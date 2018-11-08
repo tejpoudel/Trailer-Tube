@@ -3,7 +3,7 @@ html {
     height: 100%;
     width: 100%;
     min-height: 100%;
-    background: lightgray;
+    background: #020202;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -28,13 +28,14 @@ body {
     margin-bottom: 100px;
 }
 #heading {
-    font-size: 70px;
-    color: #af3e3e;
+    font-size: 45px;
     text-align: center;
-    font-weight: 700; 
-    text-shadow: 1px 1px 3px #e0d1bc;
+    font-weight: 11;
+    text-shadow: 1px 1px 3px #FFFFFF;
     font-family: ‘Limelight’, cursive;
+    color: #C2C9C8;
 }
+
 .container {
     position:relative;
  }
