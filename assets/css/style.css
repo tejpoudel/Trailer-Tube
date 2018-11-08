@@ -58,16 +58,21 @@ button:focus {
 #trailerInfo {
     margin: auto;
     /* position: relative; */
-    width: 70%;  
-    height: 55%;
+    width: 100%;  
     background: black;
     font-size: 25px;
     line-height: 2rem;
     padding: 20px;
   }
+#trailer {
+    width: 100%;  
+    background: black;
+    padding: 20px;
+}
 
 .title {
     font-size: 50px;
+    margin-bottom: 10px;
   }
 .btn-primary {
     background: #286595; 
