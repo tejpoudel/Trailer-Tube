@@ -1,5 +1,11 @@
 $(Document).ready(function(){
 
+//hiding movieinfo
+$("#trailerInfo").hide();
+//hiding movieinfo
+$("#trailer").hide();
+
+
 alert("Welcome TO Trailer Tube");
 // Project - Trailer Tube
 //TODO Movie OMDb API
@@ -31,27 +37,27 @@ function movieinfo() {
           url: queryURL,
           method: "GET"
         }).then(function(response) {
-        console.log(response);
+        //console.log(response);
 
         //var movie Plot 
         var moviePlot = response.Plot;
-        console.log(moviePlot);  
+        //console.log(moviePlot);  
         
         //var moviePoster
         var moviePoster = response.Poster;
-        console.log(moviePoster);
+        //console.log(moviePoster);
 
         //var movieTitle 
         var movieTitle = response.Title;
-        console.log(movieTitle);
+        //console.log(movieTitle);
 
         // var movieDirector 
         var movieDirector = response.Director;
-        console.log(movieDirector);
+        //console.log(movieDirector);
 
         //var Actors 
         var movieActors = response.Actors;
-        console.log(movieActors);
+        //console.log(movieActors);
 
         //var Ratings 
         var movieRating = response.imdbRating;
@@ -63,7 +69,7 @@ function movieinfo() {
 
         //Div trailerInfo
 
-        var movieInfo = $("<div class='movieInfo'>");
+        var movieInfo = $("<div id='movieInfo'>");
 
         //Title Information 
 
@@ -78,7 +84,7 @@ function movieinfo() {
         // Rating information
         var Rating = $("<p>").text("Movie Rating: " + movieRating +"/"+movRating);
         //console.log(Rating);
-         movieInfo.append(Rating);
+        movieInfo.append(Rating);
         
         // Actors Information 
         var Actors = $("<p>").text("Actors: "+movieActors);
@@ -97,15 +103,21 @@ function movieinfo() {
         var imgMovie = $("<img>").attr("src", moviePoster);
         movieInfo.append(imgMovie);
 
+        var breakline = $("<br>");
+        movieInfo.append(breakline);
 
-
-        $("#trailerInfo").prepend(movieInfo);
+        var trailerBtn = $("<button>").text("Watch Trailer");
+        movieInfo.append(trailerBtn);
+        
+        //$("movieInfo").empty();
+        $("#trailerInfo").append(movieInfo);
+        $("#trailer").append(movieTrailer);
 
         }
         
-           
+        
 )};
-movieinfo();
+//movieinfo();
 
 function youtube(){
 
@@ -133,13 +145,16 @@ function youtube(){
     }
 )};
 
-youtube(); 
+//youtube(); 
 
 // id="searchButton" is click and take input value from id="movieSearch" input type
 // Creating function 
 
 $("#searchButton").on("click", function(event){
 
+    $("movieInfo").empty();
+    $("#trailerInfo").empty();
+    $("#trailer").empty();
     //Below code prevents to refresh when pressed enter 
     event.preventDefault();
 
@@ -151,11 +166,22 @@ $("#searchButton").on("click", function(event){
        // add above movieSearch value into array 
        // movieSearchArr.push(movieSearch);
        var movieSearch = $("#movieSearch").val().trim();
-       console.log(movieSearch);
-    }
-
+       //console.log(movieSearch);
+       
     movieinfo();
     youtube(); 
+    
+
+
+    }
+    //$("#showTrailer").empty();
+    $("#trailerInfo").show();
+    $("#trailer").show();
+    //empty the div 
+    
+
 
 });
+
+
 })
