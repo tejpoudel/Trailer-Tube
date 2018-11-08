@@ -11,9 +11,10 @@ html {
 }
 body {
     background:  linear-gradient(to right, #020202, #4b3312);    
-    color: #ebeef1;
+    color: #e6e9ec;
     font-family: "PT Sans Narrow", Arial, Sans-serif;
-    font-size: 20px;
+    font-size: 40px;
+    line-height: 1.5em;
     -webkit-font-smoothing: antialiased;
     height: 100%;
     margin: 0;
@@ -60,6 +61,8 @@ button:focus {
     width: 70%;  
     height: 50%;
     background: black;
+    font-size: 30px;
+    line-height: 2rem;
   }
 .btn-primary {
     background: #286595; 
@@ -71,10 +74,10 @@ button:focus {
     padding: 10px;
     height: 400px;
 }
-.Information {
+/* .Information {
     padding: 20px;
     font-size: 50px;
-}
+} */
 /* Footer */
 .footer {
     width: 100%;
