@@ -103,14 +103,18 @@ function movieinfo() {
         var imgMovie = $("<img>").attr("src", moviePoster);
         movieInfo.append(imgMovie);
 
+        var breakline = $("<br>");
+        movieInfo.append(breakline);
+
         var trailerBtn = $("<button>").text("Watch Trailer");
         movieInfo.append(trailerBtn);
 
-        $("#trailerInfo").prepend(movieInfo);
+        var onClick = trailerBtn.attr("onclick",displayTrailer());
+        movieInfo.append(onClick);
+        
+        //$("movieInfo").empty();
+        $("#trailerInfo").append(movieInfo);
         $("#trailer").append(movieTrailer);
-
-       
-
 
         }
         
@@ -151,11 +155,9 @@ function youtube(){
 
 $("#searchButton").on("click", function(event){
 
-
-    //empty the div 
-    //$("#movieInfo").empty();
-
-
+    $("movieInfo").empty();
+    $("#trailerInfo").empty();
+    $("#trailer").empty();
     //Below code prevents to refresh when pressed enter 
     event.preventDefault();
 
@@ -169,13 +171,23 @@ $("#searchButton").on("click", function(event){
        var movieSearch = $("#movieSearch").val().trim();
        console.log(movieSearch);
        
-       
-    }
-    $("#trailerInfo").show();
-    $("#trailer").show();
-
     movieinfo();
     youtube(); 
+    
+
+
+    }
+    //$("#showTrailer").empty();
+    $("#trailerInfo").show();
+    $("#trailer").show();
+    
+    //empty the div 
+    
+//create a function for displaying Trailer Div 
+function displayTrailer(){
+    
+}
 
 });
+
 })
