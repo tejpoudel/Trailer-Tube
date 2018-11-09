@@ -22,13 +22,11 @@ $(Document).ready(function () {
     //var movieSearchArr = ["The Rock"];//$("#movieSearch").val().trim();
     //console.log(movieSearchArr);
 
-
-
     //When id="searchButton" is clicked, It will take value from id=moviesearch and append to queryURL 
     //var movieSearch = "";
     function movieinfo() {
+        
         var movieSearch = $("#movieSearch").val().trim();
-
         var movRating = 10;
 
         var queryURL = "http://www.omdbapi.com/?t=" + movieSearch + "&apikey=388edf5a";
@@ -55,8 +53,6 @@ $(Document).ready(function () {
             // var imgMovie = $(".mvImg").attr("src", noimagePoster);
             // movieInfo.append(imgMovie);
 
-
-           
             //console.log(moviePoster);
 
             //var movieTitle 
@@ -79,8 +75,6 @@ $(Document).ready(function () {
                 alert("Movie not found!");
                 return false
             }
-
-           
 
             //var movieReleased 
             var movieReleased = response.Released;
@@ -163,8 +157,24 @@ $(Document).ready(function () {
     //youtube(); 
 
     // id="searchButton" is click and take input value from id="movieSearch" input type
-    // Creating function 
+    // Creating function
+    
+    //user can search through input 
+    var input = document.getElementById("movieSearch");
+    input.addEventListener("keyup", function(event){
 
+        event.preventDefault();
+
+        if (event.keyCode === 13){
+            //alert("Hello Enter")
+            document.getElementById("searchButton").click();
+        }
+
+
+    })
+
+
+    // When Button Click Functionality 
     $("#searchButton").on("click", function (event) {
 
         var queryURL = "http://www.omdbapi.com/?t=" + movieSearch + "&apikey=388edf5a";
@@ -201,7 +211,6 @@ $(Document).ready(function () {
 
 
             }
-
 
             movieinfo();
             $("#trailerInfo").show();
