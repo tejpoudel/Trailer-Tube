@@ -12,7 +12,7 @@ html {
 body {
     background-color:  #020202;    
     color: #e6e9ec;
-    font-family: "PT Sans Narrow", Arial, Sans-serif;
+    font-family: "PT Sasns Narrow", Arial, Sans-serif;
     font-size: 40px;
     line-height: 1.5em;
     -webkit-font-smoothing: antialiased;
@@ -39,6 +39,7 @@ body {
 .container {
     position:relative;
  }
+ 
 .search {
     width: 40%;
     height: 40px;
@@ -61,7 +62,7 @@ button:focus {
     margin: auto;
     /* position: relative; */
     width: 100%;  
-    background: black;
+    /* background: black; */
     font-size: 25px;
     line-height: 2rem;
     padding: 20px;
@@ -88,10 +89,13 @@ button:focus {
     height: 300px;
     padding-right: 15px;
 }
-/* .Information {
-    padding: 20px;
-    font-size: 50px;
-} */
+
+hr
+{
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+
 /* Footer */
 .footer {
     width: 100%;
@@ -101,12 +105,8 @@ button:focus {
     position: fixed;
     bottom: 0;
 }
-.footer p {
-   font-size: 8px;
-   margin: 0;
+.footer a {
+   margin-right: 10px;
+   margin-top: 25px;
 }
 
-hr
-{
-    border-top: 1px solid rgb(255, 255, 255);
-}
