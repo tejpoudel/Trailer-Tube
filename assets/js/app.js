@@ -46,6 +46,17 @@ $(Document).ready(function () {
 
             //var moviePoster
             var moviePoster = response.Poster;
+
+            if (moviePoster === "N/A") {
+                alert("Movie Poster not found!");
+            }
+
+            // var noimagePoster = "./assets/images/link.png"
+            // var imgMovie = $(".mvImg").attr("src", noimagePoster);
+            // movieInfo.append(imgMovie);
+
+
+           
             //console.log(moviePoster);
 
             //var movieTitle 
