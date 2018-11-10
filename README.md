@@ -28,6 +28,9 @@ This is Trailer Tube project. It's intended as a challenge to put together a web
 - OMDB
 - YouTube
 
+## Link
+https://tejpoudel.github.io/trailer-tube/
+
 ## Installation
 Clone or download this zip file open it and simply open the index.html file and enjoy!
 
