@@ -1,4 +1,4 @@
-$(Document).ready(function () {
+$(document).ready(function () {
 
     //hiding movieinfo
     $("#trailerInfo").hide();
