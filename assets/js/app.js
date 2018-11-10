@@ -29,7 +29,7 @@ $(document).ready(function () {
         var movieSearch = $("#movieSearch").val().trim();
         var movRating = 10;
 
-        var queryURL = "http://www.omdbapi.com/?t=" + movieSearch + "&apikey=388edf5a";
+        var queryURL = "https://www.omdbapi.com/?t=" + movieSearch + "&apikey=388edf5a";
         console.log(queryURL);
         // Creating an AJAX call for the specific movie 
         $.ajax({
