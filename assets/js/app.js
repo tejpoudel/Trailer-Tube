@@ -177,7 +177,7 @@ $(document).ready(function () {
     // When Button Click Functionality 
     $("#searchButton").on("click", function (event) {
 
-        var queryURL = "http://www.omdbapi.com/?t=" + movieSearch + "&apikey=388edf5a";
+        var queryURL = "https://www.omdbapi.com/?t=" + movieSearch + "&apikey=388edf5a";
         console.log(queryURL);
         // Creating an AJAX call for the specific movie 
         $.ajax({
