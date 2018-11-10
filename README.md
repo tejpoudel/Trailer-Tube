@@ -22,6 +22,10 @@ This is Trailer Tube project. It's intended as a challenge to put together a web
 
 ### img - This folder included images of word mapn image.
 
+### APIs used
+- OMDB
+-Youtube
+
 ## Installation
 Clone or download this zip file open it and simply open the index.html file and enjoy!
 
